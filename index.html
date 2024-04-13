@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="input-group tooltip">
+          <p class="head">
+            Enter gross annual income <span class="icon">?</span>
+          </p>
+          <input
+            type="number"
+            id="grossIncome"
+            placeholder="Enter gross annual income"
+          />
+
+          <span class="error" id="grossIncomeError" style="display: none"
+            >!</span
+          >
+          <span class="tooltiptext" id="grossIncomeTooltip"
+            >Please enter numbers only</span
+          >
+        </div>
+
+        <div class="input-group tooltip">
+          <p class="head">Enter extra income <span class="icon">?</span></p>
+          <input
+            type="number"
+            id="extraIncome"
+            placeholder="Enter extra income from other sources"
+          />
+          <span class="error" id="extraIncomeError" style="display: none"
+            >!</span
+          >
+          <span class="tooltiptext" id="extraIncomeTooltip"
+            >Please enter numbers only</span
+          >
+        </div>
+
+        <div class="input-group">
+          <p class="head">Select age group <span class="icon">?</span></p>
+
+          <select id="age">
+            <option value="">Select Age</option>
+            <option value="<40">&lt;40</option>
+            <option value=">=40&<60">&ge;40 & &lt;60</option>
+            <option value=">=60">&ge;60</option>
+          </select>
+          <span class="error" id="ageError" style="display: none">!</span>
+        </div>
+
+        <div class="input-group tooltip">
+          <p class="head">
+            Enter total applicable deductions <span class="icon">?</span>
+          </p>
+          <input
+            type="number"
+            id="deductions"
+            placeholder="Enter total applicable deductions"
+          />
+          <span class="error" id="deductionsError" style="display: none"
+            >!</span
+          >
+          <span class="tooltiptext" id="deductionsTooltip"
+            >Please enter numbers only</span
+          >
+        </div>
+
+        <br />
+        <button onclick="calculateTax()" class="button1">Submit</button>
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+         <div> <p id="taxResult"></p></div>
+         <div>  <button class="close">Close</button></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

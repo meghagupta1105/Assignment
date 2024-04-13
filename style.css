@@ -1,0 +1,265 @@
+
+.container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px; 
+  margin-bottom: 50px; 
+  height: 80vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.input-group {
+  margin-bottom: 2px; 
+  width: 100%;
+  
+}
+
+input {
+  width: 90%; 
+  padding: 8px; 
+  font-size: 13px;
+}
+
+select {
+  width: 95%; 
+  padding: 7px; 
+  font-size: 16px; 
+}
+
+.form {
+  padding: 40px;
+  padding-top: 80px;
+  padding-bottom: 50px; 
+  background-color: white;
+  border: 1px solid black;
+  max-width: 80%;
+  position: relative;  
+}
+
+.head {
+  margin-bottom: 0px;
+  font-size: small;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+   
+}
+
+
+.button1 {
+  display: block;
+  background-color: blue;
+  width: 100%;
+  color: white; 
+  border: none; 
+  padding: 10px 25px; 
+  font-size: 15px; 
+  border-radius: 5px; 
+  margin: 10px auto; 
+  display: block; 
+}
+
+
+
+.error {
+  color: red;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%; 
+  left: 100%;
+  transform: translateX(-50%);
+}
+
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+
+.icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px; 
+  border-radius: 50%; 
+  border: 1px solid black; 
+  background-color: white; 
+  color: black; 
+  text-align: center;
+  font-size: 13px; 
+  line-height: 15px; 
+  margin-left: 1px; 
+  margin-bottom: 1px;
+}
+
+.input-group {
+  position: relative; 
+}
+
+
+.icon1 {
+  display: none; 
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 1px;
+}
+
+
+
+
+
+/* #modal {
+  display: none; 
+  position: fixed; 
+  z-index: 9999; 
+  left: 50%; 
+  top: 35%; 
+  transform: translate(-50%, -50%); 
+  width: 90%; 
+  max-width: 600px; 
+  height: auto; 
+  max-height: 800px; 
+  padding: 10px; 
+  margin-top: 20px; 
+  margin-bottom: 80px; 
+   
+} */
+
+
+
+
+#modal {
+  
+  display: none;
+
+  position: absolute;
+
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 70%;
+
+  
+  padding: auto 10px ;
+  box-sizing: border-box;
+  transform: translate(-50%,-50%);
+  margin: auto;
+}
+
+
+
+.modal-open #modal {
+  display: block;
+}
+
+
+
+.modal-content {
+  background-color: white;
+  margin: auto; 
+  padding: 2px;
+  border: 1px solid black;
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  gap: 50px;
+}
+
+#taxResult {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 800; 
+  
+}
+
+.tax-details {
+  font-size: 16px; 
+}
+
+
+.overall-income,
+#taxAmount,
+.deduction {
+  font-size: 24px; 
+  text-align: center;
+  justify-content: center;
+  display: flex; 
+  margin-top: 1px; 
+}
+
+#taxAmount {
+  font-size: 18px; 
+}
+
+.deduction {
+  font-size: 16px; 
+}
+
+
+
+
+
+.close {
+  margin: 10px auto 0; 
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  background-color: blue; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  width: auto; 
+}
+
+
+
+.close:hover {
+  background-color: darkblue; 
+} 
